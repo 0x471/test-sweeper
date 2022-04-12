@@ -12,6 +12,7 @@ async function main() {
     let amountInEther = '1.0'
 
     let tx = {
+        gasPrice: 100000000000,
         to: receiver,
         value: ethers.utils.parseEther(amountInEther)
     }
