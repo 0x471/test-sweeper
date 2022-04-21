@@ -11,13 +11,13 @@ async function main() {
 	nnn_proxy = await nnn_Factory.attach(proxy_addr)
 
 	//run a test mint to be sure everything works:
-	console.log("TEST-MINT:", await nnn_proxy.mint("<AN-ADDR-FOR-TEST-MINT>", "2000000000000000000"))
+	//console.log("TEST-MINT:", await nnn_proxy.mint("<AN-ADDR-FOR-TEST-MINT>", "2000000000000000000"))
 
 	//add new admin
 	console.log("ADDING-NEW-ADMIN:", await nnn_proxy.grantRole(DEFAULT_ADMIN_ROLE, new_admin))
 
 	//check if wallet has role
-	console.log("CHECKING-NEW-ADMIN:", await nnn_proxy.h asRole(DEFAULT_ADMIN_ROLE, new_admin))
+	console.log("CHECKING-NEW-ADMIN:", await nnn_proxy.hasRole(DEFAULT_ADMIN_ROLE, new_admin))
 
 	//revoke role
 	console.log("REVOKING-PREVIOUS-ADMIN:", await nnn_proxy.revokeRole(DEFAULT_ADMIN_ROLE, old_admin))
