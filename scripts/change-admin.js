@@ -15,12 +15,13 @@ async function main() {
 
 	//add new admin
 	console.log("ADDING-NEW-ADMIN:", await nnn_proxy.grantRole(DEFAULT_ADMIN_ROLE, new_admin))
-
 	//check if wallet has role
 	console.log("CHECKING-NEW-ADMIN:", await nnn_proxy.hasRole(DEFAULT_ADMIN_ROLE, new_admin))
 
 	//revoke role
 	console.log("REVOKING-PREVIOUS-ADMIN:", await nnn_proxy.revokeRole(DEFAULT_ADMIN_ROLE, old_admin))
+	//check if wallet has role
+        console.log("CHECKING-PREVIOUS-ADMIN:", await nnn_proxy.hasRole(DEFAULT_ADMIN_ROLE, new_admin))
 
 
 }
