@@ -9,4 +9,4 @@ To run this bot forever on a blockchain;
 - `forever start sweeper.js`
 
 ## The scenerio
-There is a sweeper bot runs on an account and it sweeps all the tokens that is sent to this account.  So it is not possible to use a smart contract because sweeper bot sweeps all the tokens. Because of the consensus algorithm it is not possible to solve this problem by flashloans. 
+There is a sweeper bot runs on an account and it sweeps all the tokens that is sent to this account.  So it is not possible to use a smart contract because sweeper bot sweeps all the tokens. 
